@@ -1,4 +1,4 @@
-React Bitcoin Monitor
+# React Bitcoin Monitor
 
 An app that monitors changes in the Bitcoin Price Index (BPI).
 
@@ -8,15 +8,14 @@ Bitcoin Monitor makes use of the CoinDesk Bitcoin Price Index API.
 
 The application is composed of the following components:
 
-Header - A heading that displays application title
+* Header - A heading that displays application title
 
-BitcoinMonitor - The primary (root) component that manages state for itself and all underlying components. It is also responsible for connecting to BitcoinService to retrieve Bitcoin Price Index data.
+* BitcoinMonitor - The primary (root) component that manages state for itself and all underlying components. It is also responsible for connecting to BitcoinService to retrieve Bitcoin Price Index data.
 
-Display - Displays the Bitcoin Price Index data for USD, GBP, and EUR as a default. Also allows one to select a currency as a fourth price to monitor.
+* Display - Displays the Bitcoin Price Index data for USD, GBP, and EUR as a default. Also allows one to select a currency as a fourth price to monitor.
 
-Indicator - Used by the Display component, it displays an indicator that shows if the current price is up or down from previous price.
+* Indicator - Used by the Display component, it displays an indicator that shows if the current price is up or down from previous price.
 
-Component Diagram Component Diagram
 
 The following services are used to obtain Bitcoin Price Index data:
 
