@@ -1,68 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Bitcoin Monitor
 
-## Available Scripts
+An app that monitors changes in the Bitcoin Price Index (BPI).
 
-In the project directory, you can run:
+By default, the BPI will be shown for USD, GBP, and EUR. Optionally, one can select ones own currency to display in addition to the 3 aforementioned currencies.
 
-### `npm start`
+Bitcoin Monitor makes use of the CoinDesk Bitcoin Price Index API. Go here for more price information by CoinDesk.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Go here for live demo.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The application is composed of the following components:
 
-### `npm test`
+Header - A heading that displays application title
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+BitcoinMonitor - The primary (root) component that manages state for itself and all underlying components. It is also responsible for connecting to BitcoinService to retrieve Bitcoin Price Index data.
 
-### `npm run build`
+Display - Displays the Bitcoin Price Index data for USD, GBP, and EUR as a default. Also allows one to select a currency as a fourth price to monitor.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Indicator - Used by the Display component, it displays an indicator that shows if the current price is up or down from previous price.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Component Diagram Component Diagram
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The following services are used to obtain Bitcoin Price Index data:
 
-### `npm run eject`
+BitcoinService
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+A wrapper that is responsible for integrating with the CoinDesk Bitcoin Price Index API
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Service Diagram react-bitcoin-monitor-services
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Features:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Show BPI for USD, GBP, and EUR
+Show BPI for any custom selected currency
+This project also demonstrates:
 
-## Learn More
+a typcial React project layout structure
+babel setup and configuration
+webpack setup and configuration
+eslint setup and configuration
+SCSS setup and configuration
+CoinDesk Bitcoin Price Index API integration
+Screenshots:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+...	...
+	
+	
+Developed With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Visual Studio Code - A source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring
+Node.js - Javascript runtime
+React - A javascript library for building user interfaces
+Babel - A transpiler for javascript
+Webpack - A module bundler
+SCSS - A css metalanguage
+Bootstrap 4 - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS
+Axios - Promise based HTTP client for the browser and node.js
+CoinDesk Bitcoin Price Index API - Provides Bitcoin Price Index data
+Surge - Static web publishing for Front-End Developers
