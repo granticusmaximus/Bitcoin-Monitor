@@ -6,7 +6,7 @@ By default, the BPI will be shown for USD, GBP, and EUR. Optionally, one can sel
 
 Bitcoin Monitor makes use of the CoinDesk Bitcoin Price Index API. 
 
-The application is composed of the following components:
+_The application is composed of the following components:_
 
 * Header - A heading that displays application title
 
@@ -17,21 +17,21 @@ The application is composed of the following components:
 * Indicator - Used by the Display component, it displays an indicator that shows if the current price is up or down from previous price.
 
 
-The following services are used to obtain Bitcoin Price Index data:
+_The following services are used to obtain Bitcoin Price Index data:_
 
-BitcoinService
+* BitcoinService
 
-A wrapper that is responsible for integrating with the CoinDesk Bitcoin Price Index API
+* A wrapper that is responsible for integrating with the CoinDesk Bitcoin Price Index API
 
-Service Diagram react-bitcoin-monitor-services
-
-Features:
+_Features:_
 
 Show BPI for USD, GBP, and EUR
 Show BPI for any custom selected currency
-This project also demonstrates:
 
-a typcial React project layout structure
+
+**This project also demonstrates:**
+
+> a typcial React project layout structure
 babel setup and configuration
 webpack setup and configuration
 eslint setup and configuration
@@ -43,13 +43,13 @@ CoinDesk Bitcoin Price Index API integration
 	
 Developed With
 
-Visual Studio Code - A source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring
-Node.js - Javascript runtime
-React - A javascript library for building user interfaces
-Babel - A transpiler for javascript
-Webpack - A module bundler
-SCSS - A css metalanguage
-Bootstrap 4 - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS
-Axios - Promise based HTTP client for the browser and node.js
-CoinDesk Bitcoin Price Index API - Provides Bitcoin Price Index data
-Surge - Static web publishing for Front-End Developers
+* Visual Studio Code - A source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring
+* Node.js - Javascript runtime
+* React - A javascript library for building user interfaces
+* Babel - A transpiler for javascript
+* Webpack - A module bundler
+* SCSS - A css metalanguage
+* Bootstrap 4 - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS
+* Axios - Promise based HTTP client for the browser and node.js
+* CoinDesk Bitcoin Price Index API - Provides Bitcoin Price Index data
+* Surge - Static web publishing for Front-End Developers
