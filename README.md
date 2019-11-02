@@ -4,9 +4,7 @@ An app that monitors changes in the Bitcoin Price Index (BPI).
 
 By default, the BPI will be shown for USD, GBP, and EUR. Optionally, one can select ones own currency to display in addition to the 3 aforementioned currencies.
 
-Bitcoin Monitor makes use of the CoinDesk Bitcoin Price Index API. Go here for more price information by CoinDesk.
-
-Go here for live demo.
+Bitcoin Monitor makes use of the CoinDesk Bitcoin Price Index API. 
 
 The application is composed of the following components:
 
@@ -40,7 +38,6 @@ webpack setup and configuration
 eslint setup and configuration
 SCSS setup and configuration
 CoinDesk Bitcoin Price Index API integration
-Screenshots:
 
 ...	...
 	
